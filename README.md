@@ -17,6 +17,12 @@ Code editor is required to read the code in the file main.py
 
 > Spyder 
 
+You also have to install the requirements.txt
+
+```
+pip install -r requirements.txt
+```
+
 ### Installing
 
 You just have to run main.py which use Python language and Flask app for the user interface.
