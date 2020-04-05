@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat bot</title>
+
+    <link rel = "stylesheet" type = "text/css" href="{{ url_for ('static', filename = 'customization.css') }}" >
+    <link rel = "stylesheet" type = "text/css" href="{{ url_for ('static', filename = '4d8aacec-1581436706.min.css') }}" >
+    <link rel = "stylesheet" type = "text/css" href="{{ url_for ('static', filename = 'e5d230c2-1579604032.min.css') }}" >
+
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function appendText() 
+        {
+          var user = "<div class='message user'><span><b> Toi : </b>{{user_msg}}</span></div>";
+          var bot = "<div class='message bot'><span><b> Corobot : </b>{{bot_response}}</span></div>";
+          $("form").append(user, bot);
+        });
+        </script>
+
+    </head>
+    
+    <body>
+        <img class="background-img" src="static/coronavirus.jpg" alt="" />
+
+    <div class="content">
+    <div class=" col-xs-12 col-sm-8 ">
+        <div id="col_inner_id-5e71cff8a4be7" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+            
+            <div class="block-title">
+                <h2>Que veux-tu savoir sur le Covid-19 ?</h2>
+                <p>Pour quitter, écris quitter</p>
+                <p>Tu peux partager ton expérience si tu le souhaites.</p>
+                <p>Tu peux aussi me demander le nombre de <b>cas en|au pays_en_anglais</b>, essaie ! C'est de l'instantanné ;)</p>
+            </div>
+    
+    <form id="contact_form_5e71cff8a4f1f" class="contact-form" method="post" novalidate="true">
+    
+        <div class="messages"></div>
+    
+        <div class="controls two-columns">
+            <div class="fields clearfix">
+                <div class="left-column">
+                    <div class="form-group form-group-with-icon">
+                        <input id="form_name" type="text" name="user_msg" class="form-control" placeholder="Ta question">
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="form-group form-group-with-icon">
+                        <textarea id="form_message" name="comment" class="form-control" placeholder="Partage ton expérience si tu le souhaites" rows="3"></textarea>
+                        <div class="form-control-border"></div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+                    
+            <button class="button btn-send disabled" onclick="appendText()">Envoyer</button>
+        </div>
+    </form>
+    
+        </div>
+    </div>
+
+    </div>
+
+</div>
+</body>
+</html>

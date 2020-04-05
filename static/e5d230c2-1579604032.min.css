@@ -1,0 +1,126 @@
+ .fs-background {
+ overflow:hidden;
+ position:relative
+}
+.fs-background,
+.fs-background-container,
+.fs-background-media {
+ -webkit-transition:none;
+ transition:none
+}
+.fs-background-container {
+ width:100%;
+ height:100%;
+ position:absolute;
+ top:0;
+ z-index:0;
+ overflow:hidden
+}
+.fs-background-media {
+ position:absolute;
+ top:0;
+ bottom:0;
+ opacity:0
+}
+.fs-background-media.fs-background-animated {
+ -webkit-transition:opacity 0.5s linear;
+ transition:opacity 0.5s linear
+}
+.fs-background-media img,
+.fs-background-media video,
+.fs-background-media iframe {
+ width:100%;
+ height:100%;
+ display:block;
+ -webkit-user-drag:none
+}
+.fs-background-media.fs-background-native,
+.fs-background-media.fs-background-fixed {
+ width:100%;
+ height:100%
+}
+.fs-background-media.fs-background-native img,
+.fs-background-media.fs-background-fixed img {
+ display:none
+}
+.fs-background-media.fs-background-native {
+ background-position:center;
+ background-size:cover
+}
+.fs-background-media.fs-background-fixed {
+ background-position:center;
+ background-attachment:fixed
+}
+.fs-background-embed.fs-background-ready:after {
+ width:100%;
+ height:100%;
+ position:absolute;
+ top:0;
+ right:0;
+ bottom:0;
+ left:0;
+ z-index:1;
+ content:''
+}
+.fs-background-embed.fs-background-ready iframe {
+ z-index:0
+}
+.fw-main-row.background-video .fw-container,
+.fw-main-row.background-video .fw-container-fluid {
+ z-index:1
+}
+.fw-map-canvas .unyson-shortcode-map-content {
+ min-width:274px;
+ padding:5px 4px
+}
+.fw-map-canvas img {
+ max-width:none!important
+}
+.fw-map-canvas .gm-style-iw {
+ overflow:hidden
+}
+.fw-map-canvas .infowindow a {
+ text-decoration:none;
+ font-weight:700;
+ color:#568EC7
+}
+.fw-map-canvas .infowindow-thump img {
+ width:100px;
+ height:60px;
+ margin-right:10px
+}
+.fw-map-canvas .infowindow-thump {
+ float:left
+}
+.fw-map-canvas .infowindow-title {
+ line-height:27px
+}
+.fw-map-canvas .infowindow-description {
+ color:#AFAFAF;
+ font-size:11px;
+ font-style:italic
+}
+.fw-map-canvas .infowindow-content {
+ float:left;
+ max-width:130px
+}
+.fw-divider-space {
+ clear:both;
+ width:100%
+}
+.fw-divider-space.space-sm {
+ height:30px
+}
+.fw-divider-space.space-md {
+ height:60px
+}
+.fw-divider-space.space-lg {
+ height:100px
+}
+.fw-divider-line {
+ clear:both;
+ position:relative;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:100%
+}
