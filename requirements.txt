@@ -169,7 +169,7 @@ pep8==1.7.1
 pexpect==4.7.0
 phik==0.9.9
 pickleshare==0.7.5
-Pillow==6.2.1
+Pillow==8.1.1
 Pint==0.11
 pkginfo==1.5.0.1
 plac==0.9.6
