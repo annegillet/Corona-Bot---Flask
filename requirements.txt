@@ -195,7 +195,7 @@ pyexcel-io==0.5.20
 pyexcel-ods3==0.5.3
 pyflakes==2.1.1
 pygal==2.4.0
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.4
 pymongo==3.9.0
 Pympler==0.7
